@@ -1,0 +1,43 @@
+[SNIPER] Running ['/tmp/sjq/sniper/record-trace', '-o', '/tmp/tmp6t5MLT/run_benchmarks', '-v', '--roi', '-e', '1', '-s', '0', '-r', '1', '--follow', '--routine-tracing', '--', '/home/jshen/sjq/sniper/test/maple/glucose_release', '/home/jshen/sjq/sniper/test/maple/cnfs/MM-23-2-2-2-2-3.cnf']
+[SNIPER] Start
+[SNIPER] Running ['bash', '-c', '/tmp/sjq/sniper/lib/sniper -c /tmp/sjq/sniper/config/base.cfg --general/total_cores=1 --general/output_dir=/tmp/sjq/sniper/test/maple/MM-23-2-2-2-2-3.cnf.fix --config=/tmp/sjq/sniper/config/nehalem.cfg --config=/tmp/sjq/sniper/config/gainestown.cfg -g --general/inst_mode_init=fast_forward -g --general/magic=true -g --traceinput/stop_with_first_app=true -g --traceinput/restart_apps=false -g --hooks/numscripts=1 -g --hooks/script0name=/tmp/sjq/sniper/test/maple/MM-23-2-2-2-2-3.cnf.fix/sim.scripts.py -g --hooks/script0args= -g --traceinput/stop_with_first_app=false -g --traceinput/enabled=true -g --traceinput/emulate_syscalls=true -g --traceinput/num_apps=1 -g --traceinput/trace_prefix=/tmp/tmp6t5MLT/run_benchmarks']
+Executing Python script /tmp/sjq/sniper/test/maple/MM-23-2-2-2-2-3.cnf.fix/sim.scripts.py
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Sniper using SIFT/trace-driven frontend
+[SNIPER] Running pre-ROI region in  FAST_FORWARD mode
+[SNIPER] Running application ROI in DETAILED mode
+[SNIPER] Running post-ROI region in FAST_FORWARD mode
+[SNIPER] --------------------------------------------------------------------------------
+[RECORD-TRACE] Using the Pin frontend (sift/recorder)
+[SIFT_RECORDER] Running /home/jshen/PIN/pin -mt -injection child -xyzzy -ifeellucky -follow_execv -t /tmp/sjq/sniper/sift/recorder/obj-intel64/sift_recorder -verbose 1 -debug 0 -roi 1 -roi-mpi 0 -f 0 -d 0 -b 0 -o /tmp/tmp6t5MLT/run_benchmarks -e 1 -s 0 -r 1 -pa 0 -rtntrace 1 -stop 0    -- /home/jshen/sjq/sniper/test/maple/glucose_release /home/jshen/sjq/sniper/test/maple/cnfs/MM-23-2-2-2-2-3.cnf
+[SNIPER] Enabling performance models
+[SNIPER] Setting instrumentation mode to DETAILED
+c This is MapleLCMDistChronoBT-DL.
+c WARNING: for repeatability, setting FPU to use double precision
+c ============================[ Problem Statistics ]=============================
+c |                                                                             |
+c |  Number of variables:         26541                                         |
+c |  Number of clauses:          117125                                         |
+c |  Parse time:                   1.12 s                                       |
+c |  Eliminated clauses:           0.24 Mb                                      |
+c Reduced to 23756 vars, 108568 cls (grow=0)
+c |  Eliminated clauses:           2.34 Mb                                      |
+c Reduced to 8918 vars, 151822 cls (grow=8)
+c cl_inc_rate=1.398, var_dec_rate=2.664
+c No. effective iterative eliminations: 1
+c |  Simplification time:          6.38 s                                       |
+c |                                                                             |
+c ============================[ Search Statistics ]==============================
+c | Conflicts |          ORIGINAL         |          LEARNT          | Progress |
+c |           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
+c ===============================================================================
+c Switched to VSIDS.
+[TRACE:0] -- DONE --
+[SNIPER] Disabling performance models
+[SNIPER] Leaving ROI after 24973.58 seconds
+[SNIPER] Simulated 67458.8M instructions, 67231.5M cycles, 1.00 IPC
+[SNIPER] Simulation speed 2701.2 KIPS (2701.2 KIPS / target core - 370.2ns/instr)
+[SNIPER] Sampling: executed 96.37% of simulated time in detailed mode
+[SNIPER] Setting instrumentation mode to FAST_FORWARD
+[SNIPER] End
+[SNIPER] Elapsed time: 147638.45 seconds

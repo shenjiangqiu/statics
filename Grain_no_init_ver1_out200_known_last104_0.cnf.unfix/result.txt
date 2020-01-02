@@ -1,0 +1,22 @@
+[SNIPER] Running ['/tmp/sjq/sniper/record-trace', '-o', '/tmp/tmpMaH0wL/run_benchmarks', '-v', '--roi', '-e', '1', '-s', '0', '-r', '1', '--follow', '--routine-tracing', '--', '/home/jshen/sjq/sniper/test/maple/glucose_release', '/home/jshen/sjq/sniper/test/maple/cnfs/Grain_no_init_ver1_out200_known_last104_0.cnf']
+[SNIPER] Start
+[SNIPER] Running ['bash', '-c', '/tmp/sjq/sniper/lib/sniper -c /tmp/sjq/sniper/config/base.cfg --general/total_cores=1 --general/output_dir=/tmp/sjq/sniper/test/maple/Grain_no_init_ver1_out200_known_last104_0.cnf.unfix --config=/tmp/sjq/sniper/config/nehalem.cfg --config=/tmp/sjq/sniper/config/gainestown.cfg -g --general/inst_mode_init=fast_forward -g --general/magic=true -g --traceinput/stop_with_first_app=true -g --traceinput/restart_apps=false -g --traceinput/stop_with_first_app=false -g --traceinput/enabled=true -g --traceinput/emulate_syscalls=true -g --traceinput/num_apps=1 -g --traceinput/trace_prefix=/tmp/tmpMaH0wL/run_benchmarks']
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Sniper using SIFT/trace-driven frontend
+[SNIPER] Running pre-ROI region in  FAST_FORWARD mode
+[SNIPER] Running application ROI in DETAILED mode
+[SNIPER] Running post-ROI region in FAST_FORWARD mode
+[SNIPER] --------------------------------------------------------------------------------
+[RECORD-TRACE] Using the Pin frontend (sift/recorder)
+[SIFT_RECORDER] Running /home/jshen/PIN/pin -mt -injection child -xyzzy -ifeellucky -follow_execv -t /tmp/sjq/sniper/sift/recorder/obj-intel64/sift_recorder -verbose 1 -debug 0 -roi 1 -roi-mpi 0 -f 0 -d 0 -b 0 -o /tmp/tmpMaH0wL/run_benchmarks -e 1 -s 0 -r 1 -pa 0 -rtntrace 1 -stop 0    -- /home/jshen/sjq/sniper/test/maple/glucose_release /home/jshen/sjq/sniper/test/maple/cnfs/Grain_no_init_ver1_out200_known_last104_0.cnf
+[SNIPER] Enabling performance models
+[SNIPER] Setting instrumentation mode to DETAILED
+[TRACE:0] -- DONE --
+[SNIPER] Disabling performance models
+[SNIPER] Leaving ROI after 24980.16 seconds
+[SNIPER] Simulated 63624.9M instructions, 58621.6M cycles, 1.09 IPC
+[SNIPER] Simulation speed 2547.0 KIPS (2547.0 KIPS / target core - 392.6ns/instr)
+[SNIPER] Sampling: executed 99.45% of simulated time in detailed mode
+[SNIPER] Setting instrumentation mode to FAST_FORWARD
+[SNIPER] End
+[SNIPER] Elapsed time: 147638.48 seconds
